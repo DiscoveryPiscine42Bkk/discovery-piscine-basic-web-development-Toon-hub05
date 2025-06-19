@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Me</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .top-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .circle-photo {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 6px solid #ccc;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .circle-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .text-content h1 {
+      font-size: 60px;
+      margin: 0;
+    }
+
+    .text-content h2 {
+      font-size: 22px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .text-content p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #483f3f;
+    }
+
+    /* Contact section below text */
+    .contact-info {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .contact-info i {
+      margin-right: 8px;
+      color: #666;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .square-image {
+      margin: 40px 0;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    .square-image img {
+      display: block;
+      margin: auto;
+      width: 60%;
+      height: 100%;
+      object-fit: cover;
+      
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .button {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      color: rgb(255, 255, 255);
+      transition: transform 0.2s;
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+    }
+
+    .resume { background-color: #d9c49c; }
+    .projects { background-color: #f3aca8; color: white; }
+    .contact { background-color: #79e2e2; }
+
+    @media (max-width: 768px) {
+      .top-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .text-content h1 {
+        font-size: 40px;
+        text-align: center;
+      }
+
+      .text-content p {
+        text-align: center;
+      }
+
+      .square-image {
+        height: 1000px;
+      }
+
+      .button {
+        width: 100px;
+        height: 100px;
+      }
+
+      .contact-info {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- ส่วนบน: รูปวงกลม + ข้อความ -->
+    <div class="top-section">
+      <div class="circle-photo">
+        <img src="IMG_4245.webp" alt="Profile" />
+      </div>
+
+      <div class="text-content">
+        <h1>Kodchakorn</h1>
+        <div class="contact-info">
+          <div class="contact-item"><i class="fab fa-instagram"></i> @yourinstagram</div>
+          <div class="contact-item"><i class="fab fa-line"></i> yourlineid</div>
+        </div>
+        <h2>หลักสูตรครุศาสตร์อุตสาหกรรมและเทคโนโลยี</h2>
+        <p>
+          ครุศาสตร์อุตสาหกรรมและเทคโนโลยีเดิมชื่อ คณะครุศาสตร์อุตสาหกรรมและวิทยาศาสตร์
+          จัดตั้งขึ้นเมื่อวันที่ 10 พฤศจิกายน 2520 เพื่อให้สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบังเป็นศูนย์การศึกษา 
+          ทำหน้าที่ผลิตครูอาชีวศึกษาสำหรับวิทยาลัยเทคนิคและอาชีวศึกษาต่าง ๆให้การศึกษา ค้นคว้าวิจัยทางวิทยาศาสตร์และทำหน้าที่
+          การจัดการเรียนการสอนวิชาพื้นฐานทั่วไปตามหลักสูตรระดับปริญญาตรีให้กับคณะต่าง ๆ ในสถาบัน ฯ
+        </p>
+      </div>
+    </div>
+
+    <!-- ภาพสี่เหลี่ยมอยู่ตรงกลาง -->
+    <div class="square-image">
+      <img src="kmitl2.jpg" alt="Second Image" />
+    </div>
+
+    <!-- ปุ่มวงกลมล่างสุด -->
+    <div class="button-row">
+      <button class="button resume">Home</button>
+      <button class="button projects">Phatthanachat</button>
+      <button class="button contact">Kodchakorn</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
